@@ -3,9 +3,7 @@ pipeline{
     stages {
         stage('testing'){
         steps{
-         sh '''#!/bin/bash
-                 echo "hello world" 
-         '''
+         bat 'ifconfig'
         }
         }
     }
