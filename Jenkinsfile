@@ -7,10 +7,14 @@ pipeline{
 				bat 'docker build -t jhooomn/workshop:latest .'
 			}
 		}
-		stage('Push') {
-
+        stage('Validate image'){
+            steps{
+                bat "docker image inspect jhooomn/workshop:latest"
+            }
+        }
+		stage('Deploy') {
 			steps {
-				bat 'docker push jhooomn/workshop:latest'
+				bat 'docker run -p 25565:25565 jhooomn/workshop:latest -d'
 			}
 		}
 	}
