@@ -1,9 +1,5 @@
-// preparación, construcción, análisis de la imagen, push al
-//registry de docker y despliegue en su máquina local
 pipeline{
-    agent {
-        docker { image 'node:14-alpine' }
-    }
+    agent any
     stages {
         stage('Staging...'){
             steps{
