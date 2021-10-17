@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('testing'){
         steps{
-         bat 'ifconfig'
+         bat 'docker login -u jhooomn'
         }
         }
     }
