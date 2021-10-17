@@ -5,7 +5,7 @@ pipeline{
     stages {
         stage('Staging...'){
             steps{
-                sh "docker login -u jhooomn $DOCKER_HUB_TOKEN"
+                sh "docker login -u jhooomn"
             }
         }
         stage('Build Image...'){
