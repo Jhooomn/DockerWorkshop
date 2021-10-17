@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages {
-        stage('testing'){
+        stage('Stagin...'){
         steps{
-         bat 'docker login -u jhooomn'
+         bat "docker login -u jhooomn --password $DOCKER_HUB_TOKEN"
         }
         }
     }
