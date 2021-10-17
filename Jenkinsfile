@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('Staging...'){
             steps{
-                sh 'docker ps'
+                sh 'ipconfig'
             }
         }
         stage('Build Image...'){
