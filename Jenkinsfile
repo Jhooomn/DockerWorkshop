@@ -14,7 +14,7 @@ pipeline{
         }
 		stage('Deploy') {
 			steps {
-				bat 'docker run -p 25565:25565 jhooomn/workshop:latest -d'
+				bat 'docker run -d -p 25565:25565 jhooomn/workshop:latest'
 			}
 		}
 	}
