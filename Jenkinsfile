@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('Test'){
             steps{
-                echo "this pipeline is working with web-hook!!!"
+                echo "This pipeline is working with web-hook!!!"
             }
         }
     }
